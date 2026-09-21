@@ -1,10 +1,10 @@
-// swift-tools-version:5.5
+// swift-tools-version:6.0
 import PackageDescription
 
 let package = Package(
     name: "CarbonKit",
     platforms: [
-        .iOS(.v12)
+        .iOS(.v15)
     ],
     products: [
         .library(name: "CarbonKit", targets: ["CarbonKit"])
@@ -15,5 +15,6 @@ let package = Package(
             path: "Sources/CarbonKit"
             // Public headers default to Sources/CarbonKit/include
         )
-    ]
+    ],
+    swiftLanguageModes: [.v5],
 )
